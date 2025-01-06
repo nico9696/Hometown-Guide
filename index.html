@@ -1,27 +1,36 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
+<!-- to open this file, simply click index.html in file explorer -->
+
+<html> <!-- html is always divided into head (usually for css connecting and font imports) and body (actual things showing up on the website) tags -->
+    <head> 
+        <link rel="stylesheet" href="index.css"> <!-- connects index.html to specific css file -->
+
+        <!-- to get fonts from Google Fonts, simply go to Google Fonts and copy paste the font code on both html and css files -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap" rel="stylesheet">
     </head>
-    <body>
-        <header>
-            <h1 class="title">Visit Manila</h1>
+    <body> <!-- in this case, it's divided into header, main, and footer (good practice to subdivide webpage into a handful of parts) -->
+        <header> <!-- tag for the header of website -->
+            <h1 class="title">Visit Manila</h1> <!-- classes are used to add design to the html element -->
             <h2 class="subtitle">Enjoy delicious food and the company of warm people</h2>
         </header>
         <main>
             <h2 class="main-title">Top 3 activities to do in Manila</h2>
             <div class="attractions">
-                <div class="individual-attraction">
-                    <img src="./images/church.jpg" class="circle-pic">
+                <div class="individual-attraction"> <!-- classes can be used multiple times to have reusability -->
+                    <img src="./images/church.jpg" class="circle-pic"> 
+                    <!-- ^^^ guide to referencing pics  -->
+                    <!-- ./ is used at the start just to indicate where it's starting -->
+                    <!-- / is used to say the file is inside a folder -->
+                    <!-- ../ is used to go to the previous folder if the image is saved in a "previous" folder -->
+                     <!-- see more in chatgpt -->
                     <p class="attraction-description">Visit historic churches</p>
                 </div>
                 <div class="individual-attraction">
                     <img src="./images/mall.jpg" class="circle-pic">
                     <p class="attraction-description">Unwind in world-renowned malls</p>
                 </div>
-                <div class="individual-attraction">
+                <div class="individual-attraction"> <!--sizing this would be tricky so i made a container div for the image-->
                     <img src="./images/food.jpg" class="circle-pic">
                     <p class="attraction-description">Eat mouth-watering food</p>
                 </div>

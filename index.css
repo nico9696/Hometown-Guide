@@ -1,29 +1,30 @@
 body{
-    margin: 0;
+    margin: 0; /*since there is default margin for webpages, i want to reset it to 0 (just search up the dif. of margin, border, and padding)*/
+    /*copied-pasted from google Font*/
     font-family: "Roboto", serif;
     font-weight: 300;
     font-style: normal;
 }
 
-header{
+header{ /*affects all elements inside header tage in html*/
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url('./images/bg.jpg');
+    display: flex; /*common display method. it automatically arranges elements into a row*/
+    flex-direction: column; /*turns it from row to column*/
+    justify-content: center; /*normally, justify-content deals with the elements horizontally, but after directing it to be a column, it deals with them vertically (so from vertical pov, it's now at center)*/
+    align-items: center; /*normally, align-items deals with the elements vertically, but after directing it to be a column, it deals with them horizontally*/
+    text-align: center; /*this is like the text-align center option in MS Word... also a fast way to center elements in a div*/
+    background-image: url('./images/bg.jpg'); /*note the syntax*/
     background-size: cover; /* Scale the image to cover the entire element */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent tiling */
     color:white;
-    margin-bottom: 0;
+    margin-bottom: 0; /*removing default margin*/
 }
 
 .title{
     background-color: #467E9B;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 10px; /*see how the corners of the tile are kinda round*/
     margin-bottom: 5px;
 }
 
@@ -36,7 +37,7 @@ header{
 }
 
 main{
-    text-align: center;
+    text-align: center; /*if i had 3 buttons stacked on top of each other and wanted them to be center of screen, text-align: center is an easy way to do that*/
     background-color: #F2FAEF;
     padding-top: 30px;
 }
@@ -46,15 +47,16 @@ main{
     margin: 0;
 }
 
-.attractions{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.attractions{ /*i put all 3 tourist attrcations inside this div to organize their layout (space them evenly in a row)*/
+    display: flex; /*now display flex arranged them in a row*/
+    justify-content: space-evenly; /*from horizontal pov, it's spaced evenly*/
+    align-items: center; /*from vertical pov, it's at the center*/
     margin-top: 30px;
     /* padding: 0px 20px; */
 }
 
 .individual-attraction{
+    /*inside each indiv. attraction is the pic and short description (so now I align them)*/
     text-align: center;
 }
 
@@ -65,7 +67,7 @@ main{
 }
 
 .attraction-description{
-    font-size: 0.85rem;
+    font-size: 0.85rem; 
     font-weight: bold;
     color: #1C3755;
     margin-bottom: 35px;
@@ -84,10 +86,10 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px; /*gap between elements in display flex*/
     background-color: #A8DADB;
     border-bottom: 5px solid #638EA9;
     border-radius: 5px;
-    gap: 20px;
     padding: 0 10px;
 }
 
@@ -98,10 +100,11 @@ footer{
     border-radius: 5px;
 }
 
-.tourguide-pic-container img {
+.tourguide-pic-container img { /*so here i access the image in the class (syntax)*/
+    /* Crop the image to fill the container: */
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crop the image to fill the container */
+    object-fit: cover; 
 }
 
 .guider-description{
